@@ -3,11 +3,10 @@ senha = [""]*5
 cont = 0         
 
 while True:
-    print(f'Menu\n'
-          '1 - Cadastro\n'
-          '2 - Login\n'
-          '3 - Mostrar Usuários\n'
-          '4 - Sair')
+    print(f"1 - Cadastro\n"
+          "2 - Login\n"
+          "3 - Mostrar Usuários\n"
+          "4 - Sair")
     
     escolha = int(input("Digite a opção: "))
 
@@ -17,7 +16,7 @@ while True:
 
     elif escolha == 3:
         for i in range(cont): 
-            print(f'Usuário: {usuario[i]}')
+            print(f"Usuário: {usuario[i]}")
 
     elif escolha == 2:
         login = input("Digite o login: ")
@@ -41,4 +40,4 @@ while True:
         cont += 1
     
     else:
-        print('Opção inválida, tente novamente.')
+        print("Opção inválida, tente novamente.")
